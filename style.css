@@ -5,8 +5,6 @@
 }
 body{
   font-family: sans-serif;
-    overflow: hidden;
-
 }
 
 :root {
@@ -95,7 +93,7 @@ header .logo {
 }
 .main {
   width: 100%;
-  height: calc(100vh - 72px);
+  min-height: calc(100vh - 72px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,7 +104,6 @@ header .logo {
   position: absolute;
   top: 0;
   height: calc(100% - 72px);
-
   left: 0;
   object-fit: cover;
 }
@@ -178,10 +175,11 @@ h2 {
 }
 @media (max-width: 768px) {
   .mask {
-    height: calc(100% - 72px);
+    
   }
   .sci{
     right: 20px;
     bottom: 20px;
   }
 }
+
